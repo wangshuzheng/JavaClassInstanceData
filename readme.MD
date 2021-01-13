@@ -15,9 +15,10 @@ try:
 problems:
 1. when project is started, the debug can't be used in IDE(such as Idea).
 2. support the search for method, but now can't be used.
-3. Can't pack (because dependencies on the Java Native Package(such as sa-jdi.jar)).
+3. Can't pack (because dependencies on the Java Native Package(such as sa-jdi.jar)). --- resolved
 
 
 
 CHANGE LOG:
 1. 2021-01-13 --- inner test complete
+2. 2021-01-13 18:26 --- resolve can't pack
