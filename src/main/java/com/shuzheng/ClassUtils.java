@@ -100,10 +100,7 @@ public class ClassUtils {
         props.setProperty("netTimeoutForStreamingResults", "0");
         HikariConfig config = new HikariConfig();
         config.setDriverClassName("com.mysql.jdbc.Driver");
-        String KEYSPACE = "jedtest6";
-        String USERNAME = "jedtest6_admin";
-        String PASSWORD = "HIdtAdEqxqVwDf7P";
-        String VITESS_JDBC_URL = "jdbc:mysql://gate6.local.jed.jddb.com:3306/" + KEYSPACE + "?user=" + USERNAME + "&password=" + PASSWORD + "&serverTimezone=Asia/Shanghai";
+        String VITESS_JDBC_URL = "jdbc:mysql://localhost:3306/test?user=test&password=test&serverTimezone=Asia/Shanghai";
         config.setJdbcUrl(VITESS_JDBC_URL);
         config.setConnectionInitSql("select 1");
         config.setMinimumIdle(5);
